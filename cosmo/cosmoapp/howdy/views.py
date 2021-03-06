@@ -22,7 +22,7 @@ class AboutPageView(TemplateView):
 # global variable
 r = sr.Recognizer()
 
-# Speech recognition class (Voice)
+# Speech recognition class (Voice feature)
 class VoiceFeature(TemplateView):
     template_name = 'index.html'
 def record_audio(ask = False):
