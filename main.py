@@ -3,18 +3,18 @@ import os
 from twilio.rest import Client
 
 otp=random.randint(100000,999999)
-print("RANDOM NUMBER IS: ",otp)
+print(otp)
 
 # Account Sid and Auth Token from twilio.com/console
-account_sid = 'AC18b2edb36345f2428d27bd66c4e1883e'
-auth_token = '0dba6c56719bc06d2dcfafc6599cc4ad'
+account_sid = 'ACcfded5c814de352eb71e16be381d4a63'
+auth_token = '58d3fd901d209de5225dec7604caa338'
 client = Client(account_sid, auth_token)
 
 #  send sms 
 verification = client.verify \
-                .services('VA6c19b31a510b4856fc8496fec2c82e63') \
+                .services('VA982640a09885ed166809555d8648cde2') \
                 .verifications \
-                .create(to='', channel='sms')
+                .create(to='+919815615582', channel='sms')
 
 print(verification.status)
-  
+
